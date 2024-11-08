@@ -1,0 +1,28 @@
+.binary-clock {
+  text-align: center;
+}
+
+.binary-row {
+  margin: 5px;
+}
+
+.binary-row span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 2px;
+  background: #656565;
+  border-radius: 50%;
+}
+
+.binary-row span.on {
+  background: #4caf50;
+}
+
+.decimal-time {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #4caf50;
+  font-weight: bold;
+  font-family: 'Arial';
+}

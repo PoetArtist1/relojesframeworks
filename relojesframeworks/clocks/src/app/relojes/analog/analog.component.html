@@ -1,0 +1,17 @@
+<div class="analog-clock">
+  <!-- Manecillas del reloj -->
+  <div class="hand hour" [style.transform]="hourHand"></div>
+  <div class="hand minute" [style.transform]="minuteHand"></div>
+  <div class="hand second" [style.transform]="secondHand"></div>
+  <div class="center-circle"></div>
+
+  <!-- Números de las horas -->
+  <div *ngFor="let num of hourNumbers" [ngStyle]="num.style" class="hour-number">
+    {{ num.value }}
+  </div>
+</div>
+
+<!-- Contenedor para la hora en formato decimal -->
+<div class="decimal-time">
+  {{ hours }} : {{ minutes }} : {{ seconds }}
+</div>

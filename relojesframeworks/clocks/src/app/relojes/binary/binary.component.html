@@ -1,0 +1,10 @@
+<div class="binary-clock">
+  <div *ngFor="let binary of binaryTime" class="binary-row">
+    <span *ngFor="let bit of binary" [class.on]="bit === 1"></span>
+  </div>
+  
+  <!-- Contenedor para mostrar la hora en decimal -->
+  <div class="decimal-time">
+    {{ hours }} : {{ minutes }} : {{ seconds }}
+  </div>
+</div>

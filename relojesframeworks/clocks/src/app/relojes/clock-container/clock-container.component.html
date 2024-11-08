@@ -1,0 +1,28 @@
+<div class="clock-container">
+  <!-- Dropdown para seleccionar el tipo de reloj -->
+  <div class="dropdown-container">
+    <app-clock-dropdown (clockSelected)="onClockSelected($event)"></app-clock-dropdown>
+  </div>
+
+  <!-- Contenedor para el reloj seleccionado -->
+  <div class="clock-display">
+    <div *ngIf="selectedClock === 'Digital'">
+      <app-digital></app-digital>
+    </div>
+    <div *ngIf="selectedClock === 'Analógico'">
+      <app-analog></app-analog>
+    </div>
+    <div *ngIf="selectedClock === 'Binario'">
+      <app-binary></app-binary>
+    </div>
+    <div *ngIf="selectedClock === 'Hexadecimal'">
+      <app-hexadecimal></app-hexadecimal>
+    </div>
+    <div *ngIf="selectedClock === 'Texto'">
+      <app-text></app-text>
+    </div>
+    <div *ngIf="selectedClock === 'Barra'">
+      <app-bar></app-bar>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="time-bar">
+    <div class="label">Horas: {{ hour }}</div>
+    <div class="bar">
+      <div class="progress" [style.width]="getHourPercentage()"></div>
+    </div>
+  </div>
+  
+  <div class="time-bar">
+    <div class="label">Minutos: {{ minute }}</div>
+    <div class="bar">
+      <div class="progress" [style.width]="getMinutePercentage()"></div>
+    </div>
+  </div>
+  
+  <div class="time-bar">
+    <div class="label">Segundos: {{ second }}</div>
+    <div class="bar">
+      <div class="progress" [style.width]="getSecondPercentage()"></div>
+    </div>
+  </div>
+  
