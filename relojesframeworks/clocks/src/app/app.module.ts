@@ -11,6 +11,9 @@ import { TextComponent } from './relojes/text/text.component';
 import { HexadecimalComponent } from './relojes/hexadecimal/hexadecimal.component';
 import { ClockContainerComponent } from './relojes/clock-container/clock-container.component';
 import { BarComponent } from './relojes/bar/bar.component';
+import {FormsModule} from '@angular/forms'
+import { CircleClockComponent } from './relojes/circleclock/circleclock.component';
+import { StairClockComponent } from './relojes/stair-clock/stair-clock.component';
 
 @NgModule({
   declarations: [
@@ -22,11 +25,14 @@ import { BarComponent } from './relojes/bar/bar.component';
     TextComponent,
     HexadecimalComponent,
     ClockContainerComponent,
-    BarComponent
+    BarComponent,
+    CircleClockComponent,
+    StairClockComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration()

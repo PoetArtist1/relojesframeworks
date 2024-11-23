@@ -6,7 +6,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./clock-dropdown.component.css']
 })
 export class ClockDropdownComponent {
-  clocks: string[] = ['Digital', 'Analógico', 'Binario', 'Hexadecimal', 'Texto', 'Barra'];
+  clocks: string[] = ['Digital', 'Analógico', 'Binario', 'Hexadecimal', 'Texto', 'Barra', 'Circulo', 'Escalera'];
   
   @Output() clockSelected = new EventEmitter<string>();
 

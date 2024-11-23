@@ -24,5 +24,11 @@
     <div *ngIf="selectedClock === 'Barra'">
       <app-bar></app-bar>
     </div>
+    <div *ngIf="selectedClock === 'Circulo'">
+      <app-circle-clock></app-circle-clock>
+    </div>
+    <div *ngIf="selectedClock === 'Escalera'">
+      <app-stair-clock></app-stair-clock>
+    </div>
   </div>
 </div>

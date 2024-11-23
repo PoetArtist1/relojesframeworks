@@ -1,5 +1,5 @@
 <div class="binary-clock">
-  <div *ngFor="let binary of binaryTime" class="binary-row">
+ <div *ngFor="let binary of binaryTime" class="binary-row">  <!-- itera sobre binaryTime, que es una matriz bidimensional en BinaryComponent y contiene tres arrays binarios, uno para horas, uno para minutos y otro para segundos -->
     <span *ngFor="let bit of binary" [class.on]="bit === 1"></span>
   </div>
   

@@ -1,0 +1,38 @@
+<div class="stair-clock">
+    <!-- Escalera de horas -->
+    <div class="stair-container">
+      <div class="stair-title">Horas</div>
+      <div class="stair">
+        <div
+          *ngFor="let step of hoursSteps; let i = index"
+          [class.active]="i === hours"
+          class="stair-step hour-step"
+        ></div>
+      </div>
+    </div>
+  
+    <!-- Escalera de minutos -->
+    <div class="stair-container">
+      <div class="stair-title">Minutos</div>
+      <div class="stair">
+        <div
+          *ngFor="let step of minutesSteps; let i = index"
+          [class.active]="i === minutes"
+          class="stair-step minute-step"
+        ></div>
+      </div>
+    </div>
+  
+    <!-- Escalera de segundos -->
+    <div class="stair-container">
+      <div class="stair-title">Segundos</div>
+      <div class="stair">
+        <div
+          *ngFor="let step of secondsSteps; let i = index"
+          [class.active]="i === seconds"
+          class="stair-step second-step"
+        ></div>
+      </div>
+    </div>
+  </div>
+  

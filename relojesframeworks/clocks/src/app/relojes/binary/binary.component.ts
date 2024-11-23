@@ -7,7 +7,8 @@ import { isPlatformBrowser } from '@angular/common';
   styleUrls: ['./binary.component.css'],
 })
 export class BinaryComponent implements OnInit {
-  binaryTime: number[][] = [];
+
+  binaryTime: number[][] = []; //Matriz bidimensional que contiene la representación binaria de las horas, minutos y segundos.
   hours: number = 0;
   minutes: number = 0;
   seconds: number = 0;

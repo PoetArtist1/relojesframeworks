@@ -1,11 +1,11 @@
 <div class="analog-clock">
-  <!-- Manecillas del reloj -->
+  <!-- Manecillas del reloj, aplica el transform de css sobre las manecillas para moverlas -->
   <div class="hand hour" [style.transform]="hourHand"></div>
   <div class="hand minute" [style.transform]="minuteHand"></div>
   <div class="hand second" [style.transform]="secondHand"></div>
   <div class="center-circle"></div>
 
-  <!-- Números de las horas -->
+  <!-- Números de las horas, aplica estilos dinámicos de posicionamiento para cada número, lo que permite que cada número esté en su lugar alrededor de la esfera del reloj. -->
   <div *ngFor="let num of hourNumbers" [ngStyle]="num.style" class="hour-number">
     {{ num.value }}
   </div>
@@ -14,4 +14,4 @@
 <!-- Contenedor para la hora en formato decimal -->
 <div class="decimal-time">
   {{ hours }} : {{ minutes }} : {{ seconds }}
-</div>
+</div> 
